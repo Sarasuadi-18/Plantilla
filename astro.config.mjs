@@ -53,6 +53,9 @@ export default defineConfig({
 						{ label: '🛠️ Prueba', slug: 'guides/prueba'  },
 						{label: 'Prueba Dos', slug: 'guides/prueba-dos'},
 						{label: 'Prueba Tres', slug: 'guides/prueba-tres'},
+						{label: 'Prueba Cuatro', slug: 'guides/prueba-cuatro'},
+						{label: 'Prueba Cinco', slug: 'guides/prueba-cinco'},
+						{label: 'Prueba Seies', slug: 'guides/prueba-seis', badge:{ text: 'Nuevo', variant: 'note' }},
 					],
 
 				},

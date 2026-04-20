@@ -1,0 +1,134 @@
+---
+title: Prueba seis
+description: A reference page in my new Starlight docs site.
+
+badge:
+    text: New
+    
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+
+
+
+### Hola 
+
+
+import { Steps } from '@astrojs/starlight/components';
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## ejemplo de steps
+<Steps>
+    1. **Configura tu entorno:** Instala las dependencias necesarias.
+    2. **Crea el archivo:** Añade un nuevo archivo en `src/content/docs/`.
+    3. **¡Despliega!:** Ejecuta `npm run build`.
+</Steps>
+
+## ejemplo de cards 
+
+<CardGrid stagger>
+  <Card title="Diseño UI" icon="pencil">
+    Tarjeta 1
+  </Card>
+  <Card title="Desarrollo" icon="rocket">
+    tarjeta 2
+  </Card>
+  <Card title="Desarrollo" icon="danger">
+   tarjeta 3
+  </Card>
+   <Card title="Desarrollo" icon="danger">
+   tarjeta 4
+  </Card>
+</CardGrid>
+
+
+## Icono
+<Icon name="star" color="goldenrod" size="2rem" />
+<Icon name="rocket" color="var(--sl-color-text-accent)" />
+
+<Icon name="moon" color="black" size="2rem" />
+
+
+<Icon name="seti:gradle" color="black" size="2rem" />
+
+<Steps>
+1. Import the component into your MDX file:
+
+   ```js
+   import { Steps } from '@astrojs/starlight/components';
+   ```
+
+2. Wrap `<Steps>` around your ordered list items.
+
+</Steps>
+
+
+
+<Tabs>
+  <TabItem label="Laravel php" icon="seti:platformio">
+    ```php
+    // Tu código de Laravel aquí
+    $response = Http::withHeaders([
+        'Accept' => 'application/json',
+    ])->post('https://api-sandbox.factus.com.co/oauth/token', [
+        'grant_type' => 'refresh_token',
+    ]);
+    ```
+  </TabItem>
+
+  <TabItem label="Node js" icon="seti:javascript">
+    ```javascript
+    // Tu código de Node.js aquí
+    const response = await fetch('https://api-sandbox.factus.com.co/oauth/token', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new URLSearchParams({ 'grant_type': 'refresh_token' })
+    });
+    ```
+  </TabItem>
+
+  <TabItem label="Curl" icon="seti:ethereum">
+    ```bash
+    curl -X POST https://api-sandbox.factus.com.co/oauth/token \
+      -H "Accept: application/json" \
+      -d "grant_type=refresh_token" \
+      -d "client_id=tu_id" \
+      -d "client_secret=tu_secret" \
+      -d "refresh_token=tu_token"
+    ```
+  </TabItem>
+</Tabs>
+
+
+## With Icons
+
+A tabbed interface rendered with the [`<Tabs>` and `<TabItem>` components](https://starlight.astro.build/components/tabs/) and [icons](https://starlight.astro.build/components/tabs/#add-icons-to-tabs).
+
+<Tabs>
+
+<TabItem label="npm" icon="seti:npm">
+
+```sh
+npm install starlight-theme-galaxy
+```
+
+</TabItem>
+
+<TabItem label="pnpm" icon="pnpm">
+
+```sh
+pnpm add starlight-theme-galaxy
+```
+
+</TabItem>
+
+<TabItem label="Yarn" icon="seti:yarn">
+
+```sh
+yarn add starlight-theme-galaxy
+```
+
+</TabItem>
+
+</Tabs>
